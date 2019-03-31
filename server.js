@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-const stripe = require('stripe')('sk_test_idX54FUj1ij6GkCS0AqwTQt200Kop0fXiW');
+const stripe = require('stripe')('YOUR_SECRET_KEY');
 
 app.get('/',(req,res) => {
     res.send('Hello Sripe Payment')
